@@ -7,24 +7,106 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C40BC7B421B4332B00F82730 /* TaskMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BC7B321B4332B00F82730 /* TaskMenuItem.swift */; };
+		C40BC7B621B43D4500F82730 /* TaskSubmenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BC7B521B43D4500F82730 /* TaskSubmenu.swift */; };
+		C474DBAC21B13E41001E778C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474DBAB21B13E41001E778C /* Task.swift */; };
+		C474DBB121B17041001E778C /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C474DBAD21B1703D001E778C /* Nunito-Bold.ttf */; };
+		C474DBB221B1704E001E778C /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C474DBAE21B1703E001E778C /* Nunito-Italic.ttf */; };
+		C474DBB321B1704E001E778C /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C474DBB021B1703F001E778C /* Nunito-Regular.ttf */; };
+		C474DBB421B1704E001E778C /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C474DBAF21B1703E001E778C /* Nunito-SemiBold.ttf */; };
+		C474DBB821B17BF6001E778C /* Global Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474DBB721B17BF6001E778C /* Global Variables.swift */; };
+		C474DBBA21B182EE001E778C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474DBB921B182EE001E778C /* DataManager.swift */; };
+		C474DBBC21B198DB001E778C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474DBBB21B198DB001E778C /* Extensions.swift */; };
+		C474DBBE21B1A015001E778C /* Conveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474DBBD21B1A015001E778C /* Conveniences.swift */; };
+		C474DBC621B29D3E001E778C /* NewTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474DBC521B29D3E001E778C /* NewTaskVC.swift */; };
+		C47B7C2321B7D4A0004A3C4D /* OptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47B7C2221B7D4A0004A3C4D /* OptionsVC.swift */; };
 		C485E74121B123F900C5ED3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485E74021B123F900C5ED3C /* AppDelegate.swift */; };
-		C485E74321B123F900C5ED3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485E74221B123F900C5ED3C /* ViewController.swift */; };
+		C485E74321B123F900C5ED3C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485E74221B123F900C5ED3C /* MainViewController.swift */; };
 		C485E74521B123FB00C5ED3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C485E74421B123FB00C5ED3C /* Assets.xcassets */; };
 		C485E74821B123FB00C5ED3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C485E74621B123FB00C5ED3C /* Main.storyboard */; };
+		C485E75121B1244500C5ED3C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485E75021B1244500C5ED3C /* Colors.swift */; };
+		C485E75421B1246900C5ED3C /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485E75321B1246900C5ED3C /* Fonts.swift */; };
+		C485E75621B1249000C5ED3C /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485E75521B1249000C5ED3C /* Prefs.swift */; };
+		C495791E21B2E8E40047D223 /* SheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C495791D21B2E8E40047D223 /* SheetVC.swift */; };
+		C495792021B3A4C50047D223 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = C495791F21B3A4C50047D223 /* Images.swift */; };
+		C495792221B3BA0F0047D223 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C495792121B3BA0F0047D223 /* TimerController.swift */; };
+		C495792621B3D56D0047D223 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C495792521B3D56D0047D223 /* MainMenu.swift */; };
+		C4A3E11821B7D5F20096EBC4 /* OptionsTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E11721B7D5F20096EBC4 /* OptionsTabVC.swift */; };
+		C4A3E13C21BA65EF0096EBC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E13B21BA65EF0096EBC4 /* AppDelegate.swift */; };
+		C4A3E14021BA65F00096EBC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E13F21BA65F00096EBC4 /* Assets.xcassets */; };
+		C4A3E14321BA65F00096EBC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E14121BA65F00096EBC4 /* Main.storyboard */; };
+		C4A3E14A21BA67450096EBC4 /* FlexShiftLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = C4A3E13921BA65EF0096EBC4 /* FlexShiftLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C4A3E14C21BA6F630096EBC4 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A3E14B21BA6F630096EBC4 /* ServiceManagement.framework */; };
+		C4B4900521B63A9300E23E83 /* EditTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4900421B63A9300E23E83 /* EditTaskVC.swift */; };
+		F87972094D1A663AC4A6DF8D /* Pods_FlexShift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F946CF77585A7F5494FBB210 /* Pods_FlexShift.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C4A3E14921BA671A0096EBC4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				C4A3E14A21BA67450096EBC4 /* FlexShiftLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A07E690B04A6DDA8EB1A9BEE /* Pods-FlexShift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexShift.debug.xcconfig"; path = "Target Support Files/Pods-FlexShift/Pods-FlexShift.debug.xcconfig"; sourceTree = "<group>"; };
+		C40BC7B321B4332B00F82730 /* TaskMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMenuItem.swift; sourceTree = "<group>"; };
+		C40BC7B521B43D4500F82730 /* TaskSubmenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSubmenu.swift; sourceTree = "<group>"; };
+		C474DBAB21B13E41001E778C /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		C474DBAD21B1703D001E778C /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		C474DBAE21B1703E001E778C /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		C474DBAF21B1703E001E778C /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		C474DBB021B1703F001E778C /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		C474DBB721B17BF6001E778C /* Global Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Global Variables.swift"; sourceTree = "<group>"; };
+		C474DBB921B182EE001E778C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C474DBBB21B198DB001E778C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C474DBBD21B1A015001E778C /* Conveniences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conveniences.swift; sourceTree = "<group>"; };
+		C474DBC521B29D3E001E778C /* NewTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskVC.swift; sourceTree = "<group>"; };
+		C47B7C2221B7D4A0004A3C4D /* OptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsVC.swift; sourceTree = "<group>"; };
 		C485E73D21B123F900C5ED3C /* FlexShift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexShift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C485E74021B123F900C5ED3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C485E74221B123F900C5ED3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C485E74221B123F900C5ED3C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C485E74421B123FB00C5ED3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C485E74721B123FB00C5ED3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C485E74921B123FB00C5ED3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C485E74A21B123FB00C5ED3C /* FlexShift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlexShift.entitlements; sourceTree = "<group>"; };
+		C485E75021B1244500C5ED3C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		C485E75321B1246900C5ED3C /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		C485E75521B1249000C5ED3C /* Prefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
+		C495791D21B2E8E40047D223 /* SheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetVC.swift; sourceTree = "<group>"; };
+		C495791F21B3A4C50047D223 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		C495792121B3BA0F0047D223 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+		C495792521B3D56D0047D223 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		C4A3E11721B7D5F20096EBC4 /* OptionsTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTabVC.swift; sourceTree = "<group>"; };
+		C4A3E13921BA65EF0096EBC4 /* FlexShiftLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexShiftLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A3E13B21BA65EF0096EBC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4A3E13F21BA65F00096EBC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4A3E14221BA65F00096EBC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4A3E14421BA65F00096EBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A3E14521BA65F00096EBC4 /* FlexShiftLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlexShiftLauncher.entitlements; sourceTree = "<group>"; };
+		C4A3E14B21BA6F630096EBC4 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		C4B4900421B63A9300E23E83 /* EditTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskVC.swift; sourceTree = "<group>"; };
+		D4BF8CDACA9B896DC059678C /* Pods-FlexShift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexShift.release.xcconfig"; path = "Target Support Files/Pods-FlexShift/Pods-FlexShift.release.xcconfig"; sourceTree = "<group>"; };
+		F946CF77585A7F5494FBB210 /* Pods_FlexShift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexShift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C485E73A21B123F900C5ED3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A3E14C21BA6F630096EBC4 /* ServiceManagement.framework in Frameworks */,
+				F87972094D1A663AC4A6DF8D /* Pods_FlexShift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A3E13621BA65EF0096EBC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,11 +116,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABFBD2BE0AD85C65056D90E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4A3E14B21BA6F630096EBC4 /* ServiceManagement.framework */,
+				F946CF77585A7F5494FBB210 /* Pods_FlexShift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C40BC7B221B4330100F82730 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C495792521B3D56D0047D223 /* MainMenu.swift */,
+				C40BC7B521B43D4500F82730 /* TaskSubmenu.swift */,
+				C40BC7B321B4332B00F82730 /* TaskMenuItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C474DBB521B17095001E778C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C474DBAD21B1703D001E778C /* Nunito-Bold.ttf */,
+				C474DBAE21B1703E001E778C /* Nunito-Italic.ttf */,
+				C474DBB021B1703F001E778C /* Nunito-Regular.ttf */,
+				C474DBAF21B1703E001E778C /* Nunito-SemiBold.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C474DBB621B17B28001E778C /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C474DBB921B182EE001E778C /* DataManager.swift */,
+				C474DBAB21B13E41001E778C /* Task.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		C485E73421B123F900C5ED3C = {
 			isa = PBXGroup;
 			children = (
 				C485E73F21B123F900C5ED3C /* FlexShift */,
+				C4A3E13A21BA65EF0096EBC4 /* FlexShiftLauncher */,
 				C485E73E21B123F900C5ED3C /* Products */,
+				E1C3D9CC936FAC4DDB201DDE /* Pods */,
+				ABFBD2BE0AD85C65056D90E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				C485E73D21B123F900C5ED3C /* FlexShift.app */,
+				C4A3E13921BA65EF0096EBC4 /* FlexShiftLauncher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,13 +179,74 @@
 			isa = PBXGroup;
 			children = (
 				C485E74021B123F900C5ED3C /* AppDelegate.swift */,
-				C485E74221B123F900C5ED3C /* ViewController.swift */,
+				C40BC7B221B4330100F82730 /* Components */,
+				C485E75821B124C800C5ED3C /* Controllers */,
+				C485E75721B1249C00C5ED3C /* Global */,
+				C474DBB521B17095001E778C /* Resources */,
+				C474DBB621B17B28001E778C /* DataModel */,
 				C485E74421B123FB00C5ED3C /* Assets.xcassets */,
 				C485E74621B123FB00C5ED3C /* Main.storyboard */,
 				C485E74921B123FB00C5ED3C /* Info.plist */,
 				C485E74A21B123FB00C5ED3C /* FlexShift.entitlements */,
 			);
 			path = FlexShift;
+			sourceTree = "<group>";
+		};
+		C485E75221B1244D00C5ED3C /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				C485E75021B1244500C5ED3C /* Colors.swift */,
+				C485E75321B1246900C5ED3C /* Fonts.swift */,
+				C495791F21B3A4C50047D223 /* Images.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		C485E75721B1249C00C5ED3C /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				C485E75221B1244D00C5ED3C /* Theme */,
+				C485E75521B1249000C5ED3C /* Prefs.swift */,
+				C474DBB721B17BF6001E778C /* Global Variables.swift */,
+				C474DBBB21B198DB001E778C /* Extensions.swift */,
+				C474DBBD21B1A015001E778C /* Conveniences.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		C485E75821B124C800C5ED3C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C485E74221B123F900C5ED3C /* MainViewController.swift */,
+				C47B7C2221B7D4A0004A3C4D /* OptionsVC.swift */,
+				C4A3E11721B7D5F20096EBC4 /* OptionsTabVC.swift */,
+				C495792121B3BA0F0047D223 /* TimerController.swift */,
+				C495791D21B2E8E40047D223 /* SheetVC.swift */,
+				C474DBC521B29D3E001E778C /* NewTaskVC.swift */,
+				C4B4900421B63A9300E23E83 /* EditTaskVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C4A3E13A21BA65EF0096EBC4 /* FlexShiftLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				C4A3E13B21BA65EF0096EBC4 /* AppDelegate.swift */,
+				C4A3E13F21BA65F00096EBC4 /* Assets.xcassets */,
+				C4A3E14121BA65F00096EBC4 /* Main.storyboard */,
+				C4A3E14421BA65F00096EBC4 /* Info.plist */,
+				C4A3E14521BA65F00096EBC4 /* FlexShiftLauncher.entitlements */,
+			);
+			path = FlexShiftLauncher;
+			sourceTree = "<group>";
+		};
+		E1C3D9CC936FAC4DDB201DDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A07E690B04A6DDA8EB1A9BEE /* Pods-FlexShift.debug.xcconfig */,
+				D4BF8CDACA9B896DC059678C /* Pods-FlexShift.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C485E74D21B123FB00C5ED3C /* Build configuration list for PBXNativeTarget "FlexShift" */;
 			buildPhases = (
+				0F976196D411E0363FE85C5C /* [CP] Check Pods Manifest.lock */,
 				C485E73921B123F900C5ED3C /* Sources */,
 				C485E73A21B123F900C5ED3C /* Frameworks */,
 				C485E73B21B123F900C5ED3C /* Resources */,
+				C819E59E676C7D65E8C4220B /* [CP] Embed Pods Frameworks */,
+				C4A3E14921BA671A0096EBC4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -81,6 +270,23 @@
 			name = FlexShift;
 			productName = FlexShift;
 			productReference = C485E73D21B123F900C5ED3C /* FlexShift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4A3E13821BA65EF0096EBC4 /* FlexShiftLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4A3E14821BA65F00096EBC4 /* Build configuration list for PBXNativeTarget "FlexShiftLauncher" */;
+			buildPhases = (
+				C4A3E13521BA65EF0096EBC4 /* Sources */,
+				C4A3E13621BA65EF0096EBC4 /* Frameworks */,
+				C4A3E13721BA65EF0096EBC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlexShiftLauncher;
+			productName = FlexShiftLauncher;
+			productReference = C4A3E13921BA65EF0096EBC4 /* FlexShiftLauncher.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -94,6 +300,14 @@
 				ORGANIZATIONNAME = "Dylan Southard";
 				TargetAttributes = {
 					C485E73C21B123F900C5ED3C = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					C4A3E13821BA65EF0096EBC4 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -112,6 +326,7 @@
 			projectRoot = "";
 			targets = (
 				C485E73C21B123F900C5ED3C /* FlexShift */,
+				C4A3E13821BA65EF0096EBC4 /* FlexShiftLauncher */,
 			);
 		};
 /* End PBXProject section */
@@ -121,20 +336,108 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C474DBB421B1704E001E778C /* Nunito-SemiBold.ttf in Resources */,
+				C474DBB321B1704E001E778C /* Nunito-Regular.ttf in Resources */,
 				C485E74521B123FB00C5ED3C /* Assets.xcassets in Resources */,
+				C474DBB221B1704E001E778C /* Nunito-Italic.ttf in Resources */,
+				C474DBB121B17041001E778C /* Nunito-Bold.ttf in Resources */,
 				C485E74821B123FB00C5ED3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4A3E13721BA65EF0096EBC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A3E14021BA65F00096EBC4 /* Assets.xcassets in Resources */,
+				C4A3E14321BA65F00096EBC4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F976196D411E0363FE85C5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlexShift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C819E59E676C7D65E8C4220B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlexShift/Pods-FlexShift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexShift/Pods-FlexShift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C485E73921B123F900C5ED3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C485E74321B123F900C5ED3C /* ViewController.swift in Sources */,
+				C485E75421B1246900C5ED3C /* Fonts.swift in Sources */,
+				C4A3E11821B7D5F20096EBC4 /* OptionsTabVC.swift in Sources */,
+				C474DBBC21B198DB001E778C /* Extensions.swift in Sources */,
+				C495791E21B2E8E40047D223 /* SheetVC.swift in Sources */,
+				C474DBC621B29D3E001E778C /* NewTaskVC.swift in Sources */,
+				C40BC7B421B4332B00F82730 /* TaskMenuItem.swift in Sources */,
+				C495792021B3A4C50047D223 /* Images.swift in Sources */,
+				C474DBBA21B182EE001E778C /* DataManager.swift in Sources */,
+				C4B4900521B63A9300E23E83 /* EditTaskVC.swift in Sources */,
+				C474DBBE21B1A015001E778C /* Conveniences.swift in Sources */,
+				C474DBB821B17BF6001E778C /* Global Variables.swift in Sources */,
+				C40BC7B621B43D4500F82730 /* TaskSubmenu.swift in Sources */,
+				C485E74321B123F900C5ED3C /* MainViewController.swift in Sources */,
+				C474DBAC21B13E41001E778C /* Task.swift in Sources */,
+				C495792621B3D56D0047D223 /* MainMenu.swift in Sources */,
+				C47B7C2321B7D4A0004A3C4D /* OptionsVC.swift in Sources */,
+				C485E75621B1249000C5ED3C /* Prefs.swift in Sources */,
+				C495792221B3BA0F0047D223 /* TimerController.swift in Sources */,
+				C485E75121B1244500C5ED3C /* Colors.swift in Sources */,
 				C485E74121B123F900C5ED3C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A3E13521BA65EF0096EBC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A3E13C21BA65EF0096EBC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +448,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				C485E74721B123FB00C5ED3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4A3E14121BA65F00096EBC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4A3E14221BA65F00096EBC4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -269,9 +580,11 @@
 		};
 		C485E74E21B123FB00C5ED3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A07E690B04A6DDA8EB1A9BEE /* Pods-FlexShift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FlexShift/FlexShift.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5X8KQU9JXV;
@@ -282,15 +595,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihounokyaku.com.FlexShift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		C485E74F21B123FB00C5ED3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4BF8CDACA9B896DC059678C /* Pods-FlexShift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FlexShift/FlexShift.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5X8KQU9JXV;
@@ -301,6 +617,47 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihounokyaku.com.FlexShift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		C4A3E14621BA65F00096EBC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FlexShiftLauncher/FlexShiftLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5X8KQU9JXV;
+				INFOPLIST_FILE = FlexShiftLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihounokyaku.com.FlexShiftLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		C4A3E14721BA65F00096EBC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FlexShiftLauncher/FlexShiftLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5X8KQU9JXV;
+				INFOPLIST_FILE = FlexShiftLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihounokyaku.com.FlexShiftLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -322,6 +679,15 @@
 			buildConfigurations = (
 				C485E74E21B123FB00C5ED3C /* Debug */,
 				C485E74F21B123FB00C5ED3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4A3E14821BA65F00096EBC4 /* Build configuration list for PBXNativeTarget "FlexShiftLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A3E14621BA65F00096EBC4 /* Debug */,
+				C4A3E14721BA65F00096EBC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
