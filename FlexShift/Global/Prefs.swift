@@ -32,4 +32,13 @@ class Prefs: NSObject {
             (NSApplication.shared.delegate as! AppDelegate).setLaunch()
         }
     }
+    
+    static var IgnoreTimezones:Bool {
+        get {
+            return UserDefaults.standard.value(forKey: "ignoreTimezones") as? Bool ?? true
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "ignoreTimezones")
+        }
+    }
 }

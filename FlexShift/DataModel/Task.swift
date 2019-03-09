@@ -22,8 +22,31 @@ class Task : Object {
     @objc dynamic var rolloverFrequency = 0
     @objc dynamic var intervalDuration = 0
     @objc dynamic var mostRecentDuration = 0
-    @objc dynamic var lastRolledOver = Date()
-    @objc dynamic var nextRollover = Date()
+    @objc dynamic var nextRolloverString = "2018-05-06 00:00"
+    @objc dynamic var lastRolloverString = "2018-05-05 00:00"
+    @objc dynamic var lastRolloverDate = Date()
+    @objc dynamic var nextRolloverDate = Date()
+    
+    var lastRolledOver:Date {
+        get {
+            return Prefs.IgnoreTimezones ? Conveniences().date(fromString: self.lastRolloverString) : self.lastRolloverDate
+        }
+        set {
+            self.lastRolloverDate = newValue
+            self.lastRolloverString = newValue.toString()
+        }
+    }
+    
+    
+    var nextRollover:Date {
+        get {
+            return Prefs.IgnoreTimezones ? Conveniences().date(fromString: self.nextRolloverString) : self.nextRolloverDate
+        }
+        set {
+            self.nextRolloverDate = newValue
+            self.nextRolloverString = newValue.toString()
+        }
+    }
     
     var frequency:RolloverFrequency {
         get {
@@ -40,6 +63,8 @@ class Task : Object {
             self.rolloverFrequency = newValue.rawValue
         }
     }
+    
+    
     
     
     //MARK: - == REMAINING TIME  ==

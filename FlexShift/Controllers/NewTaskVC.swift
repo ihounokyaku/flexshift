@@ -120,6 +120,7 @@ class NewTaskVC: NSViewController, NSTextFieldDelegate {
         self.task!.mostRecentDuration = self.task!.intervalDuration
         self.task!.nextRollover = self.startDatePicker.dateValue.steppedUp(by: 1, forFrequency: RolloverFrequency(rawValue: self.intervalPopup.indexOfSelectedItem)!)
         self.task!.lastRolledOver = self.startDatePicker.dateValue
+        print("setting initial rollover for \(self.task!.lastRolledOver) and picker \(self.startDatePicker.dateValue)")
     }
     
     func hoursMinutesToSeconds(hours:String, minutes:String)-> Int{

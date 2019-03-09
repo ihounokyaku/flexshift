@@ -11,6 +11,7 @@ import Cocoa
 class OptionsVC: NSViewController {
     @IBOutlet weak var startAtLaunchCheckBox: NSButton!
     
+    @IBOutlet weak var IgnoreTimezoneCheckbox: NSButton!
     override func viewDidLoad() {
         self.startAtLaunchCheckBox.state = Prefs.LaunchOnStartup ? .on : .off
         print("tabVcloading3")
@@ -20,6 +21,9 @@ class OptionsVC: NSViewController {
     }
     @IBAction func checkboxChecked(_ sender: Any) {
         Prefs.LaunchOnStartup = self.startAtLaunchCheckBox.state == .on
+    }
+    @IBAction func ignoreTimezoneChecked(_ sender: Any) {
+        Prefs.IgnoreTimezones = self.IgnoreTimezoneCheckbox.state == .on
     }
     
 }

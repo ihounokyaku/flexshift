@@ -1034,9 +1034,8 @@ Gw
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rab-en-jR0">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rab-en-jR0">
                                 <rect key="frame" x="18" y="218" width="148" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Run on startup" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="bDr-lq-ce8">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -1045,9 +1044,28 @@ Gw
                                     <action selector="checkboxChecked:" target="7kx-Ao-5WU" id="Lx5-MR-y8E"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="B4h-bK-QER">
+                                <rect key="frame" x="18" y="192" width="130" height="18"/>
+                                <buttonCell key="cell" type="check" title="Ignore Timezones" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="joQ-0F-7hY">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="ignoreTimezoneChecked:" target="7kx-Ao-5WU" id="LlF-E4-HnP"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="B4h-bK-QER" firstAttribute="leading" secondItem="zFj-5Z-bnU" secondAttribute="leading" constant="20" id="29u-xe-e2T"/>
+                            <constraint firstAttribute="trailing" secondItem="Rab-en-jR0" secondAttribute="trailing" constant="286" id="CJo-dq-bMn"/>
+                            <constraint firstItem="B4h-bK-QER" firstAttribute="top" secondItem="Rab-en-jR0" secondAttribute="bottom" constant="12" id="JXr-8f-BYf"/>
+                            <constraint firstItem="Rab-en-jR0" firstAttribute="top" secondItem="zFj-5Z-bnU" secondAttribute="top" constant="66" id="TK8-a7-Fr2"/>
+                            <constraint firstAttribute="bottom" secondItem="Rab-en-jR0" secondAttribute="bottom" constant="220" id="qlC-j6-lNl"/>
+                            <constraint firstItem="Rab-en-jR0" firstAttribute="leading" secondItem="zFj-5Z-bnU" secondAttribute="leading" constant="20" id="zqE-yl-LwE"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="IgnoreTimezoneCheckbox" destination="B4h-bK-QER" id="Dsq-LD-oSx"/>
                         <outlet property="startAtLaunchCheckBox" destination="Rab-en-jR0" id="ijm-ta-erK"/>
                     </connections>
                 </viewController>
@@ -1280,10 +1298,21 @@ Gw
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XTX-9m-SFD">
+                                <rect key="frame" x="264" y="103" width="81" height="32"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Za9-F4-8BD">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="testPressed:" target="Ztt-lG-Son" id="OeW-Xp-qbF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="I3P-ya-Nu5" firstAttribute="leading" secondItem="jkA-QV-zaI" secondAttribute="trailing" constant="15" id="03J-p4-THl"/>
                             <constraint firstItem="jkA-QV-zaI" firstAttribute="leading" secondItem="d9w-yo-3ts" secondAttribute="leading" id="1T9-iR-BnG"/>
+                            <constraint firstItem="XTX-9m-SFD" firstAttribute="leading" secondItem="A5e-mw-qve" secondAttribute="trailing" constant="49" id="3Wx-GF-eVT"/>
                             <constraint firstItem="qhe-J7-bPZ" firstAttribute="centerY" secondItem="ZaR-up-qdt" secondAttribute="centerY" id="49P-3G-QdZ"/>
                             <constraint firstItem="i3u-Jp-hfC" firstAttribute="centerY" secondItem="4cr-gC-nEf" secondAttribute="centerY" id="8Gh-82-yGF"/>
                             <constraint firstItem="4cr-gC-nEf" firstAttribute="leading" secondItem="d9w-yo-3ts" secondAttribute="trailing" constant="15" id="8L5-Cc-II9"/>
@@ -1299,6 +1328,7 @@ Gw
                             <constraint firstItem="i3u-Jp-hfC" firstAttribute="leading" secondItem="4cr-gC-nEf" secondAttribute="trailing" constant="5" id="RmF-Tm-TDn"/>
                             <constraint firstItem="EpE-xe-MwJ" firstAttribute="leading" secondItem="Jof-r4-j93" secondAttribute="trailing" constant="5" id="Rxl-Wy-jU8"/>
                             <constraint firstItem="Fv4-hU-10K" firstAttribute="leading" secondItem="jTd-rp-USp" secondAttribute="leading" constant="34" id="TAF-nu-iOh"/>
+                            <constraint firstItem="Jof-r4-j93" firstAttribute="top" secondItem="XTX-9m-SFD" secondAttribute="bottom" constant="19" id="Ta9-Fa-csj"/>
                             <constraint firstItem="cu8-lh-FGB" firstAttribute="top" secondItem="jkA-QV-zaI" secondAttribute="bottom" constant="20" id="TzK-gu-SiZ"/>
                             <constraint firstItem="Jof-r4-j93" firstAttribute="leading" secondItem="qhe-J7-bPZ" secondAttribute="trailing" constant="10" id="U6k-8K-jKP"/>
                             <constraint firstItem="4XA-L7-7iY" firstAttribute="centerY" secondItem="H7h-Fq-DmT" secondAttribute="centerY" id="YKP-5j-TDT"/>
@@ -1338,7 +1368,7 @@ Gw
                 </viewController>
                 <customObject id="a6g-nV-6iI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1265" y="1696"/>
+            <point key="canvasLocation" x="1265" y="1700"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="bnD-xJ-f8W">

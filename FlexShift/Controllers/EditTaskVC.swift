@@ -70,14 +70,22 @@ class EditTaskVC: NewTaskVC {
     }
     
     override func populateForm(){
+       
         guard let task = self.task else {return}
         self.titleBox.stringValue = task.title
         self.hourBox.stringValue = String(task.intervalDuration.hours())
         self.minuteBox.stringValue = String(task.intervalDuration.minutes())
         self.intervalPopup.selectItem(at: task.frequency.rawValue)
         self.startDatePicker.dateValue = task.lastRolledOver
+        print("last rollover \(task.lastRolledOver) picker \(startDatePicker.dateValue)")
         self.timeRemainingHoursBox.stringValue = String(task.hoursLeft)
         self.timeRemainingMinutesBox.stringValue = String(task.minutesLeft)
+    }
+    
+    @IBAction func testPressed(_ sender: Any) {
+        
+        self.startDatePicker.dateValue = self.task!.lastRolledOver.steppedUp(by: 2, forFrequency: .daily)
+        print("last rollover \(self.task!.lastRolledOver) picker \(startDatePicker.dateValue)")
     }
     
     func clearForm(){
