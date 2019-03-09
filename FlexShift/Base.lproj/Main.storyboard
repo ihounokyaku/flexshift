@@ -1298,21 +1298,10 @@ Gw
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XTX-9m-SFD">
-                                <rect key="frame" x="264" y="103" width="81" height="32"/>
-                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Za9-F4-8BD">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="testPressed:" target="Ztt-lG-Son" id="OeW-Xp-qbF"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="I3P-ya-Nu5" firstAttribute="leading" secondItem="jkA-QV-zaI" secondAttribute="trailing" constant="15" id="03J-p4-THl"/>
                             <constraint firstItem="jkA-QV-zaI" firstAttribute="leading" secondItem="d9w-yo-3ts" secondAttribute="leading" id="1T9-iR-BnG"/>
-                            <constraint firstItem="XTX-9m-SFD" firstAttribute="leading" secondItem="A5e-mw-qve" secondAttribute="trailing" constant="49" id="3Wx-GF-eVT"/>
                             <constraint firstItem="qhe-J7-bPZ" firstAttribute="centerY" secondItem="ZaR-up-qdt" secondAttribute="centerY" id="49P-3G-QdZ"/>
                             <constraint firstItem="i3u-Jp-hfC" firstAttribute="centerY" secondItem="4cr-gC-nEf" secondAttribute="centerY" id="8Gh-82-yGF"/>
                             <constraint firstItem="4cr-gC-nEf" firstAttribute="leading" secondItem="d9w-yo-3ts" secondAttribute="trailing" constant="15" id="8L5-Cc-II9"/>
@@ -1328,7 +1317,6 @@ Gw
                             <constraint firstItem="i3u-Jp-hfC" firstAttribute="leading" secondItem="4cr-gC-nEf" secondAttribute="trailing" constant="5" id="RmF-Tm-TDn"/>
                             <constraint firstItem="EpE-xe-MwJ" firstAttribute="leading" secondItem="Jof-r4-j93" secondAttribute="trailing" constant="5" id="Rxl-Wy-jU8"/>
                             <constraint firstItem="Fv4-hU-10K" firstAttribute="leading" secondItem="jTd-rp-USp" secondAttribute="leading" constant="34" id="TAF-nu-iOh"/>
-                            <constraint firstItem="Jof-r4-j93" firstAttribute="top" secondItem="XTX-9m-SFD" secondAttribute="bottom" constant="19" id="Ta9-Fa-csj"/>
                             <constraint firstItem="cu8-lh-FGB" firstAttribute="top" secondItem="jkA-QV-zaI" secondAttribute="bottom" constant="20" id="TzK-gu-SiZ"/>
                             <constraint firstItem="Jof-r4-j93" firstAttribute="leading" secondItem="qhe-J7-bPZ" secondAttribute="trailing" constant="10" id="U6k-8K-jKP"/>
                             <constraint firstItem="4XA-L7-7iY" firstAttribute="centerY" secondItem="H7h-Fq-DmT" secondAttribute="centerY" id="YKP-5j-TDT"/>

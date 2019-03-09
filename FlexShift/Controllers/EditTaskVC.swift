@@ -82,11 +82,6 @@ class EditTaskVC: NewTaskVC {
         self.timeRemainingMinutesBox.stringValue = String(task.minutesLeft)
     }
     
-    @IBAction func testPressed(_ sender: Any) {
-        
-        self.startDatePicker.dateValue = self.task!.lastRolledOver.steppedUp(by: 2, forFrequency: .daily)
-        print("last rollover \(self.task!.lastRolledOver) picker \(startDatePicker.dateValue)")
-    }
     
     func clearForm(){
         self.titleBox.stringValue = ""
